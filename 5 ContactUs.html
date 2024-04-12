@@ -1,0 +1,234 @@
+<html>
+    <head>
+        <meta name="viewport" content="with-device-width, initial scale=1.0">
+        <link rel="stylesheet" href="5 ContactUs.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.google.com/css2?
+        family=Poppins:wght@100;200;300:400;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="icon" href="Images/logo2.jpg">
+        <script type="text/javascript">
+            function ValidateSellForm() {
+                var WatchCompany = document.getElementById("WatchCompany").value;
+                var WatchModel = document.getElementById("WatchModel").value;
+                var ExpectedPrice = document.getElementById("ExpectedPrice").value;
+                if (WatchCompany == "" || WatchModel == "" || ExpectedPrice == "" ) {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+                return true; 
+            }
+            function ValidateRepairForm() {
+                var WatchCompany = document.getElementById("RepairWatchCompany").value;
+                var WatchModel = document.getElementById("RepairWatchModel").value;
+                var ProblemFaced = document.getElementById("RepairProblemFaced").value;
+                var ExpTimRep = document.getElementById("RepairExpTimRep").value;
+                if (WatchCompany == "" || WatchModel == "" || ProblemFaced == "" || ExpTimRep == "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+                return true; 
+            }
+            function ValidateContactForm() {
+                var Name = document.getElementById("Name").value;
+                var Sub = document.getElementById("Sub").value;
+                var PhnNo = document.getElementById("PhnNo").value;
+                var Email = document.getElementById("Email").value;
+                if ( Name == "" || Sub == "" || PhnNo == "" || Email == "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+                return true; 
+            }
+        </script>
+        <title>Contact Us</title>
+    </head>
+<body bgcolor="black">
+    <section class="header">
+        <nav>
+            <a href="1 index.html"><img class="logo" src="Images/logo2.jpg"></a>
+            <div class="navbar">
+                <ul class="links">
+                    <a href="1 index.html"><li class="">HOME</li></a>
+                    <a href="2 OurProducts.html"><li class="">OUR PRODUCTS</li></a>
+                    <a href="3 AboutUs.html"><li class="">ABOUT US</li></a>
+                    <a href="4 Gallery.html"><li class="">GALLERY</li></a>
+                    <a href="5 ContactUs.html"><li class="">CONTACT US</li></a>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <div class="container1" id="SellLink">
+            <h1>Sell Your Watch</h1>
+            <p>
+                Explore the seamless process of selling your watch through our online watch store.
+            </p>
+            <div class="ContactBox">
+                <div class="ContactLeft">
+                    <h3>One Step Away</h3>
+                    <form id="sellForm" onsubmit="return ValidateSellForm()"> 
+                        <div class="InputRow">
+                            <div class="InputGroup">
+                                <label>Watch Company</label>
+                                <input  id="WatchCompany" type="text" placeholder="Company Name">
+                            </div>
+                            <div class="InputGroup">
+                                <label>Watch Model</label>
+                                <input id="WatchModel" type="text" placeholder="Model Name">
+                            </div>
+                        </div>
+                        <div class="InputRow">
+                            <div class="InputGroup">
+                                <label>Expected Price</label>
+                                <input id="ExpectedPrice" type="text" placeholder="$$$$$">
+                            </div>
+                        </div>
+                        <button type="Submit">Sell</button>
+                    </form>
+                </div>
+                <div class="ContactRight">
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                    <h2>SELL YOUR WATCH!!!!!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container1" id="RepairLink">
+            <h1>Repair Your Watch</h1>
+            <p>
+                Experience the convenience of repairing your watch through our online watch store's 
+                seamless process.
+            </p>
+            <div class="ContactBox">
+                <div class="ContactLeft">
+                    <h3>One Step Away</h3>
+                    <form id="RepairForm" onsubmit="return ValidateRepairForm()">
+                        <div class="InputRow">
+                            <div class="InputGroup">
+                                <label>Watch Company</label>
+                                <input id="RepairWatchCompany" type="text" placeholder="Company Name">
+                            </div>
+                            <div class="InputGroup">
+                                <label>Watch Model</label>
+                                <input id="RepairWatchModel" type="text" placeholder="Model Name">
+                            </div>
+                        </div>
+                        <div class="InputRow">
+                            <div class="InputGroup">
+                                <label>Problem Faced</label>
+                                <input id="RepairProblemFaced"type="text" placeholder="Your Problem">
+                            </div>
+                            <div class="InputGroup">
+                                <label>Expected Time of Repair</label>
+                                <input id="RepairExpTimRep" type="text" placeholder="Days">
+                            </div>
+                        </div>
+                        <button type="Submit">Repair</button>
+                    </form>
+                </div>
+                <div class="ContactRight">
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                    <h2>REPAIR YOUR WATCH!!!!!</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <h1>Connect With Us</h1>
+            <p>
+                Feel free to reach out to us for any inquiries or assistance regarding our online watch store.
+            </p>
+            <div class="ContactBox" id="ContactLink">
+                <div class="ContactLeft">
+                    <h3>Send Your Request</h3>
+                    <form id="ContactForm" onsubmit="return ValidateContactForm()">
+                        <div class="InputRow">
+                            <div class="InputGroup">
+                                <label>Name</label>
+                                <input id="Name" type="text" placeholder="Your Name">
+                            </div>
+                            <div class="InputGroup">
+                                <label>Phone No</label>
+                                <input id="PhnNo" type="text" placeholder="Your Phone Number">
+                            </div>
+                        </div>
+                        <div class="InputRow">
+                            <div class="InputGroup">
+                                <label>Email</label>
+                                <input id="Email" type="text" placeholder="Your email@gmail.com">
+                            </div>
+                            <div class="InputGroup">
+                                <label>Subject</label>
+                                <input id="Sub" type="text" placeholder="Subject">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="Submit">Send</button>
+                    </form>
+                </div>
+                <div class="ContactRight">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@email.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+977 9782421457</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>City, Place</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>       
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="3 AboutUs.html">About Us</a></li>
+                        <li><a href="5 ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="2 OurProducts.html" target="_blank">Buy</a></li>
+                        <li><a href="#SellLink">Sell</a></li>
+                        <li><a href="#RepairLink">Repair</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Socials</h4>
+                    <div class="SocialLinks">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
